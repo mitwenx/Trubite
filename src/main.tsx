@@ -6,7 +6,8 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    {/* Add the basename here so links work correctly */}
+    <BrowserRouter basename="/Trubite"> 
       <App />
     </BrowserRouter>
   </StrictMode>,
